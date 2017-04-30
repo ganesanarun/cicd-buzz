@@ -8,7 +8,7 @@ def test_sample_single_word():
     assert word in l
 
 def test_sample_multiple_words():
-    l = ('foo', 'bar', 'foobar')
+    l = ('foo_bar', 'bar', 'foobar')
     words = generator.sample(l, 2)
     assert len(words) == 2
     assert words[0] in l
